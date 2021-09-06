@@ -55,8 +55,7 @@ npm start #确保mongod 已经启动成功
 ```
 
 >
- - 如果执行 `npm install`报错` bash: npm: command not found `可以通过直接安装解决这个问题[解决方案来自这里](https://stackoverflow.com/questions/45585029/bash-npm-command-not-found)
- - 如果没有报错可以继续进行下面start命令
+ - 如果执行 `npm install`报错` bash: npm: command not found `可以通过[直接安装](https://nodejs.org/en/)解决这个问题[解决方案来自这里](https://stackoverflow.com/questions/45585029/bash-npm-command-not-found)
 
 
 ps:(端口修改在app.js 文件 `app.listen(8080)`)
