@@ -26,20 +26,27 @@ sudo tar -zxvf mongodb-osx-ssl-x86_64-4.0.9.tgz
 
 sudo mv mongodb-osx-x86_64-4.0.9/ mongodb
 
-#创建一个数据库存储目录 /data/db：
-sudo mkdir -p /data/db
+#创建一个数据库存储目录 ~/data/db：
+sudo mkdir -p ~/data/db
 ```
 
 ### 3. 启动mongod
 
+1. 先设置mongodb环境变量配置， 在~/.bash_profile添加
+
+```
+export PATH=/usr/local/mongodb/bin:$PATH 
+```
+
+2. 启动
 ``` shell
-sudo mongod
+sudo mongod --dbpath=~/data/db
 ```
 
 ### 4. 启动静态资源服务器
 
 ```shell
-cd 当前目录
+cd 当前目录(即`cd binary-sever`)
 
 npm install
 
