@@ -49,12 +49,16 @@ sudo mongod --dbpath=~/data/db
 cd 当前目录(即`cd binary-sever`)
 
 npm install
-  - 如果 bash: npm: command not found 可以通过直接安装解决这个问题[解决方案来自这里](https://stackoverflow.com/questions/45585029/bash-npm-command-not-found)
-  - 如果没有报错可以继续进行下面start命令
 
 npm start #确保mongod 已经启动成功
 
 ```
+
+>
+ - 如果执行 `npm install`报错` bash: npm: command not found `可以通过直接安装解决这个问题[解决方案来自这里](https://stackoverflow.com/questions/45585029/bash-npm-command-not-found)
+ - 如果没有报错可以继续进行下面start命令
+
+
 ps:(端口修改在app.js 文件 `app.listen(8080)`)
 ## 5. 路由
 
