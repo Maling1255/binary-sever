@@ -6,13 +6,13 @@
 
 添加到本地仓库中
 
-``` shell
+``` 
 pod repo add binary_spec git@github.com:Maling1255/lib_binary_spec.git
 ```
 
 ### 2.安装mongodb
 
-```shell
+```
 # 进入 /usr/local
 cd /usr/local
 
@@ -39,13 +39,13 @@ export PATH=/usr/local/mongodb/bin:$PATH
 ```
 
 2. 启动
-``` shell
+``` 
 sudo mongod --dbpath=~/data/db
 ```
 
 ### 4. 启动静态资源服务器
 
-```shell
+```
 cd 当前目录(即`cd binary-sever`)
 
 npm install
@@ -56,7 +56,7 @@ npm start #确保mongod 已经启动成功
 ps:(端口修改在app.js 文件 `app.listen(8080)`)
 ## 5. 路由
 
-```node
+```
 .get('/frameworks', frameworks.show)
 .get('/frameworks/:names', frameworks.show)
 .get('/frameworks/:name/:version', frameworks.show)
